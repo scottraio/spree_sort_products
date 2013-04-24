@@ -21,7 +21,7 @@
 <ul id="products" class="thumbnails sort_products">
   <% @products.each do |product| %>
     <%= content_tag_for :li, product, :class=> "three columns", :style => 'height: 300px; list-style-type: none' do %>
-      <div class="two columns thumbnail" style = "cursor: pointer;" value="<%= product.id %>">
+      <div class="three columns thumbnail" style = "cursor: pointer;" value="<%= product.id %>">
           <%= product_image(product, :width => "145", :height => "190", :id=>"image-map") %>
           <div class="caption">
             <% product_name = product.name.split(" ") %>
